@@ -1,0 +1,239 @@
+{
+	"info": {
+		"_postman_id": "4d84506f-9183-44a4-a11b-4f59533d0fe5",
+		"name": "Coperex",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "37641996"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "loginSuperAdmin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"superadmin@correo.com\",\r\n    \"password\": \"ADMIN@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3001/Supermercado/v1/auth/login"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Clients",
+			"item": [
+				{
+					"name": "AgregarClientes",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Delicias Gourmet\",\r\n    \"puntuacion\": 10,\r\n    \"trajectory\": 8,\r\n    \"category\": \"Restaurantes\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3001/Supermercado/v1/client/add"
+					},
+					"response": []
+				},
+				{
+					"name": "ListarA-Z",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/Supermercado/v1/client/list?FilterFor=A-z",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"Supermercado",
+								"v1",
+								"client",
+								"list"
+							],
+							"query": [
+								{
+									"key": "FilterFor",
+									"value": "A-z"
+								},
+								{
+									"key": "categorySpecific",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarZ-A",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/Supermercado/v1/client/list?FilterFor=Z-A",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"Supermercado",
+								"v1",
+								"client",
+								"list"
+							],
+							"query": [
+								{
+									"key": "FilterFor",
+									"value": "Z-A"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarCategoriaEspecifica",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/Supermercado/v1/client/list?FilterFor=category&categorySpecific=Salud",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"Supermercado",
+								"v1",
+								"client",
+								"list"
+							],
+							"query": [
+								{
+									"key": "FilterFor",
+									"value": "category"
+								},
+								{
+									"key": "categorySpecific",
+									"value": "Salud"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reporte",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/Supermercado/v1/client/report",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"Supermercado",
+								"v1",
+								"client",
+								"report"
+							],
+							"query": [
+								{
+									"key": "FilterFor",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateCliente",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Juan Pérez\",\r\n    \"puntuacion\": 9,\r\n    \"trajectory\": 6,\r\n    \"category\": \"Tecnología\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3001/Supermercado/v1/client/update/"
+					},
+					"response": []
+				},
+				{
+					"name": "trayectoria",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Trayectoria",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

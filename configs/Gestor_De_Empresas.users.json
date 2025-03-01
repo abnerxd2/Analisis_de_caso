@@ -1,0 +1,11 @@
+[{
+  "_id": {
+    "$oid": "67c299901607d1e479f181fa"
+  },
+  "name": "Super Admin",
+  "surname": "superadmin",
+  "email": "superadmin@correo.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$ePWhhwH1VK1eUKh2Yq8v0A$IPMrz4QwMm8SlkNheSWlUBKHouIPyK3WqBMWEo2Y3G4",
+  "role": "ADMIN_ROLE",
+  "status": true
+}]

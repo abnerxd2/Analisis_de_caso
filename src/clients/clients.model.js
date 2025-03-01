@@ -14,7 +14,9 @@ const clientsSchema = Schema({
         type: Number,
     },
     category:{
-        type: Schema.Type.ObjectId,
-        ref: "Category"
+        type: String,
     }
 })
+
+
+   export default model('Client', clientsSchema);

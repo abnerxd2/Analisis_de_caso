@@ -12,15 +12,33 @@ const authSchema = Schema({
     },
     email:{
         type: String,
-        require: true 
+        required: true 
     },
     password:{
         type: String,
-        require: true
+        required: true
     },
     role:{
         type: String,
-        require: true,
+        required: true,
         enum:["ADMIN_ROLE", "USER_ROLE"]
+    },
+    status:{
+        type: Boolean,
+        default: true
     }
+},
+{
+    versionKey: false,
+    timeStamps: true
 })
+
+
+
+authSchema.methods.toJSON = function(){
+    const {password, _id, ...usuario} = this.toObject()
+    usuario.uid = _id
+    return usuario
+}
+
+    export default model('User', authSchema);

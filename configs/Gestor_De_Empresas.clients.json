@@ -1,0 +1,71 @@
+[{
+  "_id": {
+    "$oid": "67c29e6cb9caa4122066959b"
+  },
+  "name": "Market Express",
+  "puntuacion": 10,
+  "trajectory": 3,
+  "category": "Comercio",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c29f7ca9d8c4beadfca752"
+  },
+  "name": "Juan Pérez",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c29f84a9d8c4beadfca755"
+  },
+  "name": "Supermercado La Económica",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c29f8ba9d8c4beadfca758"
+  },
+  "name": "María López",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c2a0e99a554b7e4bb7c1b4"
+  },
+  "name": "Tech Solutions",
+  "puntuacion": 9,
+  "trajectory": 5,
+  "category": "Tecnología",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c2a0f39a554b7e4bb7c1b7"
+  },
+  "name": "Supermercado La Estrella",
+  "puntuacion": 8,
+  "trajectory": 12,
+  "category": "Retail",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c2a0fd9a554b7e4bb7c1ba"
+  },
+  "name": "Transporte Rápido",
+  "puntuacion": 7,
+  "trajectory": 20,
+  "category": "Logística",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c2a1069a554b7e4bb7c1bd"
+  },
+  "name": "Delicias Gourmet",
+  "puntuacion": 10,
+  "trajectory": 8,
+  "category": "Restaurantes",
+  "__v": 0
+}]
